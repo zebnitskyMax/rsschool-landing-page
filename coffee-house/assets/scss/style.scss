@@ -1,0 +1,23 @@
+@import './base/normalize';
+
+* {
+    background: lightgray;
+    max-width: 100%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.h1-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 72px;
+    width: 100%;
+    color: darkgoldenrod;
+    margin: 0 auto;
+    text-align: center;
+}
