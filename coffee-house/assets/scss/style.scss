@@ -1,8 +1,60 @@
 @import './base/normalize';
+@import './base/constants';
 
 * {
-    background: lightgray;
+    // background: lightgray;
     max-width: 100%;
+}
+
+.h1-text {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 72px;
+    width: 100%;
+    color: darkgoldenrod;
+    margin: 0 auto;
+    text-align: center;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+
+}
+
+body {
+    position: relative;
+}
+
+.background-page {
+    background-color: $bg_Page;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -11,13 +63,63 @@ body {
     align-items: center;
 }
 
-.h1-text {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-style: italic;
+
+
+// Heading-text
+.heading-1 {
     font-size: 72px;
-    width: 100%;
-    color: darkgoldenrod;
-    margin: 0 auto;
-    text-align: center;
+    font-weight: 600;
+    line-height: 105%
+}
+
+.heading-1.accent {
+    font-style: italic
+}
+
+.heading-2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%
+}
+
+.heading-2.accent {
+    font-style: italic
+}
+
+.heading-3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%
+}
+
+// Body-text
+.medium {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%
+}
+
+.caption {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%
+}
+
+// Action-text
+.link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%
+}
+
+.burger-link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 125%
 }
