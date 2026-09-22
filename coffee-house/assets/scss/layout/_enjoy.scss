@@ -1,0 +1,54 @@
+.main {
+    .enjoy {
+        .box-img-text {
+            position: relative;
+            width: 1440px;
+
+            .enjoy-img {
+                background-image: url(../img/img-hero.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 644px;
+                display: inline-block;
+                border-radius: 40px;
+            }
+
+            .enjoy-box-text {
+                width: 53rem;
+                text-align: left;
+                position: absolute;
+                left: 10rem;
+                top: 10rem;
+
+                .enjoy-text {
+                    margin: 4rem 0;
+                }
+
+                .enjoy-btn {
+                    cursor: pointer;
+                    // transition: .5s all;
+
+                    // .enjoy-btn-cup {
+                    //     display: none;
+                    // }
+
+                    // &:hover {
+                    //     .enjoy-btn-cup {
+                    //         display: inline-block;
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        margin: 2rem 4rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
