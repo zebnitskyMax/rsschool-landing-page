@@ -1,0 +1,59 @@
+.download {
+    .download-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin: 100px 0;
+        align-items: center;
+
+        .download-text {
+            width: 630px;
+
+            .download-p {
+                margin: 40px 0;
+            }
+
+            .download-btn {
+                .btn-store {
+                    background: $bg_Page;
+                    border: 1px solid #665f55;
+                    border-radius: 100px;
+                    padding: 12px 20px;
+                    width: 200px;
+                    height: 64px;
+                    transition: .3s all linear;
+                    margin-right: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: $dark-bg-page;
+
+                        .btn-p {
+                            color: $text_Inverse;
+                        }
+
+                        .btn-h3 {
+                            color: $text_Inverse;
+                        }
+
+                        svg {
+                            path {
+                                fill: $dark-text-inverse
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .download-img {
+            background-image: url(../img/mobile-screens.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 630px;
+            height: 630px;
+            display: inline-block;
+        }
+    }
+}
