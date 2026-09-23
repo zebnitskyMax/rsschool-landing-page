@@ -410,6 +410,171 @@ template {
   justify-content: space-between;
 }
 
+.main .slider-coffee .slider-coffee-box {
+  text-align: center;
+  width: 100%;
+}
+.main .slider-coffee .slider-coffee-box .slider-coffee-slider .box-control-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .slider-coffee .slider-coffee-box .slider-coffee-slider .box-control-slider .circle-arrow {
+  border: 1px solid #665F55;
+  border-radius: 10rem;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0;
+  cursor: pointer;
+  transition: 0.3s linear all;
+}
+.main .slider-coffee .slider-coffee-box .slider-coffee-slider .box-control-slider .circle-arrow:hover {
+  background-color: #665F55;
+}
+.main .slider-coffee .slider-coffee-box .slider-coffee-slider .box-control-slider .circle-arrow:hover .arrow path {
+  stroke: #403F3D;
+}
+.main .slider-coffee .slider-coffee-box .slider-coffee-slider .box-control-slider .circle-arrow:hover .arrow:hover path {
+  stroke: #403F3D !important;
+}
+.main .slider-coffee .slider-coffee-box .slider-coffee-slider .box-control-slider .slider-text {
+  width: 48rem;
+}
+.main .slider-coffee .slider-coffee-box .slider-coffee-slider .box-control-slider .slider-text .slider-img-coffee {
+  background-image: url(../img/coffee-slider-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+  display: inline-block;
+}
+.main .slider-coffee .slider-coffee-box .pagination.active {
+  background: #665F55;
+}
+.main .slider-coffee .slider-coffee-box .pagination {
+  cursor: pointer;
+  content: " ";
+  width: 4rem;
+  height: 0.4rem;
+  background: #C1B6AD;
+  margin-left: 12px;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.gallery .gallery-box {
+  text-align: center;
+}
+.gallery .gallery-box .gallery-h2 {
+  margin-bottom: 40px;
+}
+.gallery .gallery-box .gallery-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-1 .wrap-gallery-photo {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-1 .gallery-photo-1 {
+  background-image: url(../img/about-1.png);
+  height: 590px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-1 .gallery-photo-2 {
+  background-image: url(../img/about-2.png);
+  height: 430px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-2 {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.gallery .gallery-box .gallery-img .gallery-img-2 .wrap-gallery-photo {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-2 .gallery-photo-3 {
+  background-image: url(../img/about-3.png);
+  height: 430px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-2 .gallery-photo-4 {
+  background-image: url(../img/about-4.png);
+  height: 590px;
+}
+.gallery .gallery-box .gallery-img .gallery-img-whole {
+  display: flex;
+  flex-direction: column;
+}
+.gallery .gallery-box .gallery-img .gallery-img-whole .photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 66rem;
+  display: inline-block;
+  transition: 0.3s all;
+}
+.gallery .gallery-box .gallery-img .gallery-img-whole .photo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.download .download-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin: 100px 0;
+  align-items: center;
+}
+.download .download-box .download-text {
+  width: 630px;
+}
+.download .download-box .download-text .download-p {
+  margin: 40px 0;
+}
+.download .download-box .download-text .download-btn .btn-store {
+  background: #E1D4C9;
+  border: 1px solid #665f55;
+  border-radius: 100px;
+  padding: 12px 20px;
+  width: 200px;
+  height: 64px;
+  transition: 0.3s all linear;
+  margin-right: 20px;
+}
+.download .download-box .download-text .download-btn .btn-store:hover {
+  cursor: pointer;
+  background: #292826;
+}
+.download .download-box .download-text .download-btn .btn-store:hover .btn-p {
+  color: #E1D4C9;
+}
+.download .download-box .download-text .download-btn .btn-store:hover .btn-h3 {
+  color: #E1D4C9;
+}
+.download .download-box .download-text .download-btn .btn-store:hover svg path {
+  fill: #E1D4C9;
+}
+.download .download-box .download-img {
+  background-image: url(../img/mobile-screens.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 630px;
+  height: 630px;
+  display: inline-block;
+}
+
 .btn {
   border-radius: 100px;
   padding: 20px 78px;
@@ -510,6 +675,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: #E1D4C9;
 }
 
 .wrap {

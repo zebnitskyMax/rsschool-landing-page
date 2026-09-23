@@ -1,0 +1,97 @@
+.main {
+    .slider-coffee {
+        .slider-coffee-box {
+            text-align: center;
+            width: 100%;
+            // margin: 0 auto;
+
+            .slider-coffee-h2 {}
+
+            .slider-coffee-slider {
+                .box-control-slider {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .circle-arrow {
+                        border: 1px solid $border_Inverse;
+                        border-radius: 10rem;
+                        width: 6rem;
+                        height: 6rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        gap: 0;
+                        cursor: pointer;
+                        transition: .3s linear all;
+
+                        &:hover {
+                            background-color: $dark-border-primary;
+
+                            .arrow {
+                                path {
+                                    stroke: $text_Primary;
+                                }
+                            }
+
+                            .arrow {
+                                &:hover {
+                                    path {
+                                        stroke: $text_Primary !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        // .arrow {
+                        //     &:hover {
+                        //         path {
+                        //             stroke: $text_Primary !important;
+                        //         }
+                        //     }
+                        // }
+
+                        // &:hover {
+                        //     .arrow {
+                        //         path {
+                        //             stroke: $text_Primary !important;
+                        //         }
+                        //     }
+                        // }
+                    }
+
+                    .slider-text {
+                        width: 48rem;
+
+                        .slider-img-coffee {
+                            background-image: url(../img/coffee-slider-1.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 480px;
+                            display: inline-block;
+                        }
+                    }
+
+                }
+            }
+
+            .pagination.active {
+                background: $border_Inverse;
+            }
+
+            .pagination {
+                cursor: pointer;
+                content: ' ';
+                width: 4rem;
+                height: 0.4rem;
+                background: $border_Primary;
+                margin-left: 12px;
+                display: inline-block;
+                border-radius: 100px;
+            }
+        }
+    }
+}
