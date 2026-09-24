@@ -542,6 +542,9 @@ template {
 .download .download-box .download-text .download-p {
   margin: 40px 0;
 }
+.download .download-box .download-text .download-btn {
+  display: flex;
+}
 .download .download-box .download-text .download-btn .btn-store {
   background: #E1D4C9;
   border: 1px solid #665f55;
@@ -551,6 +554,15 @@ template {
   height: 64px;
   transition: 0.3s all linear;
   margin-right: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+.download .download-box .download-text .download-btn .btn-store .download-span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 .download .download-box .download-text .download-btn .btn-store:hover {
   cursor: pointer;
@@ -573,6 +585,46 @@ template {
   width: 630px;
   height: 630px;
   display: inline-block;
+}
+
+.footer .footer-box {
+  width: 1360px;
+  margin: 0 auto;
+  background-color: #665F55;
+  height: 450px;
+  border-radius: 40px;
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer .footer-box .footer-text-link {
+  width: 530px;
+  margin: 0 100px;
+}
+.footer .footer-box .footer-text-link .footer-link .footer-list-link {
+  display: flex;
+}
+.footer .footer-box .footer-text-link .footer-link .footer-list-link .footer-item {
+  border: 1px solid #E1D4C9;
+  border-radius: 100px;
+  margin-left: 12px;
+  transition: 0.4s all linear;
+}
+.footer .footer-box .footer-text-link .footer-link .footer-list-link .footer-item:hover svg path {
+  stroke: #b0907a;
+}
+.footer .footer-box .footer-text-link .footer-link .footer-list-link .footer-item:hover {
+  background-color: #E1D4C9;
+  border-color: #b0907a;
+}
+.footer .footer-box .footer-text-link .footer-link .footer-list-link .footer-item .footer-link svg {
+  width: 24px;
+  height: 24px;
+  margin: 12px;
+}
+.footer .footer-box .footer-contacts .footer-phone {
+  text-decoration: none;
 }
 
 .btn {
@@ -646,12 +698,12 @@ li {
   list-style-type: none;
 }
 
-a {
+header a {
   text-decoration: none;
   transition: 0.8s all;
   position: relative;
 }
-a::after {
+header a::after {
   content: "";
   background: #403F3D;
   width: 0;
@@ -661,7 +713,7 @@ a::after {
   bottom: -5px;
   pointer-events: none;
 }
-a:hover::after, a:focus::after {
+header a:hover::after, header a:focus::after {
   width: 100%;
   transition: 0.8s all;
 }
@@ -753,4 +805,8 @@ body {
 
 .text_Accent {
   color: #B0907A;
+}
+
+.text_bg {
+  color: #E1D4C9;
 }/*# sourceMappingURL=style.css.map */
