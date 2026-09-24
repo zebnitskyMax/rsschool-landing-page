@@ -1,0 +1,25 @@
+.btn {
+    border-radius: 100px;
+    padding: 20px 78px;
+    width: 200px;
+    height: 64px;
+    border: none;
+    background-color: $bg_Page;
+    display: flex;
+
+
+    .enjoy-btn-cup {
+        display: none;
+    }
+
+    &:hover {
+        padding: 20px 66px;
+        transition: .2S all linear;
+
+        .enjoy-btn-cup {
+            display: inline-block;
+            margin-left: 8px;
+
+        }
+    }
+}
