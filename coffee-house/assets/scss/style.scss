@@ -6,6 +6,7 @@
 @import './layout/slider';
 @import './layout/gallery';
 @import './layout/download';
+@import './layout/footer';
 
 
 @import './components/btn';
@@ -66,7 +67,7 @@ li {
     list-style-type: none;
 }
 
-a {
+header a {
     text-decoration: none;
     transition: .8s all;
     position: relative;
@@ -183,4 +184,8 @@ body {
 
 .text_Accent {
     color: $text_Accent;
+}
+
+.text_bg {
+    color: $dark-text-primary;
 }
